@@ -160,6 +160,9 @@ Ventajas de Git Flow: roles claros por rama, releases estables, hotfixes rápido
 
 3. Diferencia/relación: el issue describe qué y por qué; el PR muestra cómo se implementó. Un PR puede cerrar un issue con palabras clave.
 
+-------
+
+
 ### Resumen 
 ---
 
