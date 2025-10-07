@@ -114,7 +114,10 @@ evita que Git rastree archivos innecesarios (logs, temporales, artefactos). Prob
 ### Creacion con flow
 1. Con el comando: git flow init -d -> Con este comando crea las ramas por defecto main y develop.
 2. git flow hotfix start ingresar-encabezado -> Este comando crea hotfix/ingresar-encabezado desde main. En mi caso lo creo manualmente, suponiendo que develop existe usando: hotfix/ingresar-encabezado -> con el comando: git checkout -b hotfix/ingresar-encabezado.
-
+3. Se realiza el merge con: git merge --no-ff hotfix/ingresar-encabezado
+4. Por ultimo usamos 
+git branch -d hotfix/ingresar-encabezado -> eliminar la rama hotfix
+git push origin main develop --follow-tags -> enviar los cambios al remoto
 
 Ventajas de Git Flow: roles claros por rama, releases estables, hotfixes rápidos sin romper develop, historial limpio y predecible para equipos y proyectos longevos.
 
@@ -149,9 +152,15 @@ Ventajas de Git Flow: roles claros por rama, releases estables, hotfixes rápido
 - El número y enlace al pull request.
 
 **📝 Respuesta:**
+### Parte teórica
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
+1. Issue: ticket para reportar tareas/bugs/ideas. Sirve para discutir y planificar.
 
+2. Pull Request (PR): solicitud para fusionar cambios de una rama a otra tras revisión. Permite code review, checks y conversación.
+
+3. Diferencia/relación: el issue describe qué y por qué; el PR muestra cómo se implementó. Un PR puede cerrar un issue con palabras clave.
+
+### Resumen 
 ---
 
 ## Pregunta 5 (2 puntos)
